@@ -11,7 +11,7 @@ const Sidebar = () => {
     }
   return (
     <>
-    <div className={`fixed lg:static w-[80%] min-h-screen lg:w-full md:w-[40%] top-0 ${sideBar ? '-left-0' : '-left-full'}  w-full h-full overflow-y-none col-span-1 p-8 bg-white border-r transition-all z-60`}>
+    <div className={`fixed lg:static w-[80%] min-h-screen lg:w-full md:w-[40%] top-0 ${sideBar ? '-left-0' : '-left-full'}  w-full h-full overflow-y-none col-span-1 p-8 bg-white border-r transition-all z-20`}>
         <div className='text-center flex items-center mb-10'>
             <img src={logo} className='w-[50px]' />
             <h1 className='uppercase font-bold tracking-[4px'>Omio Logo</h1>
@@ -37,7 +37,7 @@ const Sidebar = () => {
         </nav>
     </div>
 
-    <button onClick={handleSidebar} className='block lg:hidden absolute bottom-0 right-4 bg-[#6e62e5] p-2 text-white rounded-full text-xl'>
+    <button onClick={handleSidebar} className='block lg:hidden fixed bottom-5 right-4 bg-[#6e62e5] p-2 text-white rounded-full text-xl z-50'>
     {
         sideBar ? <RiCloseLine /> : <RiMenu3Fill /> 
     }

@@ -1,0 +1,53 @@
+table{
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    
+}
+table tr{
+    padding: 0.4em;
+
+}
+thead tr{
+    
+    color: #000000;
+}
+thead th{
+    font-size: 1.15rem;
+
+}
+
+table th,
+table td{
+    font-size: 1em;
+    padding: 1em;
+    text-align: center;
+}
+thead th{
+    color: #000000;
+    font-size: 1.15em;
+}
+@media screen and (max-width:440px){
+    table thead tr{
+        display: none;
+    }
+    table tr{
+        display: block;
+    }
+    table th, table td{
+        padding: 0.5em;
+    }
+    table td{
+        text-align: right;
+        display: block;
+        font-size: 1em;
+    }
+    table td::before{
+        content: attr(data-title) ": ";
+        float: left;
+        font-weight: bold;
+        font-size: 0.775rem;
+        color: #000000;
+    }
+    
+}

@@ -30,7 +30,7 @@ const Dashboard = () => {
       {/* First Card */}
       <div className="sm:flex">
         {/* Left Column (Column Span 12 on small screens, 9 on medium screens, 10 on large screens) */}
-        <div className="w-full sm:w-9/12 lg:w-10/12 p-4 bg-[#6e62e5] rounded-2xl m-4">
+        <div className="sm:w-8/12 lg:w-10/12 lg:p-4 bg-[#6e62e5] rounded-2xl lg:m-4 md:m-4 mx-2">
           <div className="flex flex-wrap">
             {Array.from({ length: 3 }, (_, index) => (
               <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-1">
@@ -83,7 +83,7 @@ const Dashboard = () => {
                     <span className="text-gray-400 text-xs">Last 60 days</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <h2 className="text-[#6e62e5] font-bold text-4xl">$956.82K</h2>
+                    <h2 className="text-[#6e62e5] font-bold lg:text-4xl md:text-4xl sm:3xl ">$956.82K</h2>
                     <div className="bg-green-200 rounded-3xl px-4 py-1 w-32 h-10 flex items-center text-green-500 font-semibold font-custom">
                       <RiArrowDownSFill />+5.4%
                     </div>
@@ -93,8 +93,8 @@ const Dashboard = () => {
 
               {/* Second Card (Full width on small screens, 1/2 width on medium screens, 1/3 width on large screens) */}
               <div className="w-full sm:w-1/2 lg:w-1/2">
-                <div className="rounded-md">
-                  <div className="flex items-center justify-between px-10">
+                <div className="rounded-md  mt-4">
+                  <div className="flex items-center justify-between lg:px-10 md:px-10 sm:px-2">
                     <div className="text-black font-semibold font-custom text-sm">Analytic <span className="text-green-400 font-semibold text-sm ml-2">+5.4%</span></div>
                     <div className="text-black font-semibold font-custom flex items-center cursor-pointer text-xs">Month <RiArrowDownSFill /></div>
                   </div>
@@ -107,9 +107,9 @@ const Dashboard = () => {
 
         {/* Right Column (Column Span 12 on small screens, 3 on medium screens and large screens) */}
         <div className="w-full sm:w-3/12 p-4">
-          <div className="bg-white rounded-md p-4">
+          <div className="bg-white rounded-md lg:p-3 md:p-1 sm:p-1">
             <div className="text-gray-500 font-semibold flex items-center cursor-pointer text-sm">The Professional Platform <RiArrowDownSFill /></div>
-            <div className="flex justify-between text-[#6e62e5] mt-5 text-lg border border-gray-300 py-1 px-4 rounded-xl cursor-pointer">
+            <div className="flex justify-between text-[#6e62e5] mt-5 lg:text-lg md:text:md sm:text-sm border border-gray-300 py-1 px-4 rounded-xl cursor-pointer">
               <button>Upgrade Now</button>
               <IoMdArrowForward className="text-2xl" />
             </div>

@@ -65,7 +65,7 @@ const Calendar = () => {
           <button onClick={goToNextWeek}><IoIosArrowForward className='text-[#6e62e5] border border-gray-300 rounded-full text-2xl p-1' /></button>
         </div>
       </div>
-      <div className="grid grid-cols-7 gap-2">
+      <div className="grid grid-cols-7 gap-1">
         {generateDayNames()}
         {generateDateCells()}
       </div>
